@@ -1,0 +1,27 @@
+{
+    "name": "leo-test",
+    "version": "0.1.0",
+    "builtin-baseline": "92225e6ce480662b29319d8e917d253976407247",
+    "dependencies": [
+        {
+            "name": "gtest",
+            "version>=": "1.11.0"
+        },
+        {
+            "name": "fmt",
+            "version>=": "8.0.1"
+        },
+        {
+            "name": "glfw3",
+            "version>=": "3.3.8#2"
+        },
+        {
+            "name": "glad",
+            "version>=": "0.1.34"
+        },
+        {
+            "name": "glm",
+            "version>=": "0.9.9.8#1"
+        }
+    ]
+}
