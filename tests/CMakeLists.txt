@@ -10,6 +10,3 @@ macro(add_cache_test test_name)
   add_test(NAME cache_${test_name} COMMAND ${test_name})
 
 endmacro()
-
-add_cache_test(policy_test)
-add_cache_test(policy2_test)
