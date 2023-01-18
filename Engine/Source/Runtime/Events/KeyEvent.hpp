@@ -1,5 +1,4 @@
-#if !defined(__RACEEVENTS__KEYEVENTS__HPP__)
-#define __RACEEVENTS__KEYEVENTS__HPP__
+#pragma once
 
 #include <sstream>
 #include "Event.hpp"
@@ -72,5 +71,3 @@ namespace Race
         EVENT_CLASS_TYPE(KeyTyped)
     };
 }
-
-#endif // __RACEEVENTS__KEYEVENTS__HPP__

@@ -1,10 +1,8 @@
-#if !defined(__RACEEVENTS__EVENT__HPP__)
-#define __RACEEVENTS__EVENT__HPP__
+#pragma once
 
 #include <string>
 #include <functional>
-#include "../../RaceCore/include/Base.hpp"
-//#include "RaceCore/include/Log.hpp"
+#include "RaceCore/Base.hpp"
 
 namespace Race
 {
@@ -121,5 +119,3 @@ namespace Race
         return os << e.ToString();
     }
 }
-
-#endif // __RACEEVENTS__EVENT__HPP__

@@ -1,10 +1,8 @@
-
-#if !defined(__RACEEVENTS_APPLICATIONEVENT_HPP__)
-#define __RACEEVENTS_APPLICATIONEVENT_HPP__
+#pragma once
 
 #include <sstream>
-#include "Event.hpp"
-#include "RaceCore/include/Base.hpp"
+#include "RaceCore/Base.hpp"
+#include "RaceEvents/Event.hpp"
 
 // TODO: 定义了多种事件类型,要实现跨平台接口
 namespace Race
@@ -80,4 +78,3 @@ namespace Race
     };
 }
 
-#endif // __RACEEVENTS_APPLICATIONEVENT_HPP__

@@ -4,21 +4,15 @@ project(RaceEngine VERSION 0.1.0)
 
 enable_testing()
 
+# 配置可执行文件位置和库文件位置  CMAKE_LIBRARY_OUTPUT_DIRECTORY[动态库] CMAKE_ARCHIVE_OUTPUT_DIRECTORY[静态库]
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}/bin")
+set(LIBRARY_OUTPUT_PATH "${CMAKE_BINARY_DIR}/bin")
 
-if(CMAKE_BUILD_TYPE AND (CMAKE_BUILD_TYPE STREQUAL "Debug"))
-    set(EXECUTABLE_OUTPUT_PATH "${PROJECT_SOURCE_DIR}/bin/Debug")
-    set(LIBRARY_OUTPUT_PATH "${PROJECT_SOURCE_DIR}/lib/Debug")
-elseif(CMAKE_BUILD_TYPE AND (CMAKE_BUILD_TYPE STREQUAL "Release"))
-    set(EXECUTABLE_OUTPUT_PATH "${PROJECT_SOURCE_DIR}/bin/Release")
-    set(LIBRARY_OUTPUT_PATH "${PROJECT_SOURCE_DIR}/lib/Release")
-else()
-    message("else:${CMAKE_BUILD_TYPE}")
-    message("else:${CMAKE_C_FLAGS_RELEASE}")
-    add_executable(test_release ${src_dirs})
-endif()
+message(${CMAKE_BINARY_DIR})
+set(ProjectRootDir "${CMAKE_CURRENT_SOURCE_DIR}")
 
 
-add_subdirectory(src)
+add_subdirectory(Engine)
 add_subdirectory(tests)
 add_subdirectory(examples)
 

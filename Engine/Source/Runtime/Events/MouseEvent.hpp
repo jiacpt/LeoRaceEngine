@@ -1,8 +1,7 @@
-#if !defined(__RACEEVENTS__MOUSEEVENT__HPP__)
-#define __RACEEVENTS__MOUSEEVENT__HPP__
+#pragma once
 
 #include <iostream>
-#include "Event.hpp"
+#include "RaceEvents/Event.hpp"
 
 namespace Race
 {
@@ -97,5 +96,3 @@ namespace Race
     };
 
 }
-
-#endif // __RACEEVENTS__MOUSEEVENT__HPP__

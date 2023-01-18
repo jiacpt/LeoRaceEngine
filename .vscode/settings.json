@@ -1,6 +1,11 @@
 {
     "files.associations": {
         "justfile": "bat",
-        "sstream": "cpp"
+        "algorithm": "cpp",
+        "xutility": "cpp",
+        "functional": "cpp",
+        "string": "cpp",
+        "sstream": "cpp",
+        "iostream": "cpp"
     }
 }

@@ -1,5 +1,4 @@
-#if !defined(__RACECORE__APPLiCATION__HPP__)
-#define __RACECORE__APPLiCATION__HPP__
+#pragma once
 
 #include <iostream>
 
@@ -46,5 +45,3 @@ namespace Race
     }
 
 }
-
-#endif // __RACECORE__APPLiCATION__HPP__

@@ -1,5 +1,4 @@
-#if !defined(__RACECORE__LOG__HPP__)
-#define __RACECORE__LOG__HPP__
+#pragma once
 
 #include <memory>
 #include <spdlog/spdlog.h>
@@ -50,5 +49,3 @@ namespace Race
 #define RC_TRACE(...) ::Race::Log::GetClientLogger()->trace(__VA_ARGS__)
 #define RC_WARN(...) ::Race::Log::GetClientLogger()->warn(__VA_ARGS__)
 #define RC_FATAL(...) ::Race::Log::GetClientLogger()->fatal(__VA_ARGS__)
-
-#endif // __RACECORE__LOG__HPP__

@@ -1,5 +1,4 @@
-#if !defined(__RACEEVENTS__MOUSECODE__HPP__)
-#define __RACEEVENTS__MOUSECODE__HPP__
+#pragma once
 
 namespace Race
 {
@@ -27,5 +26,3 @@ namespace Race
         };
     }
 }
-
-#endif // __RACEEVENTS__MOUSECODE__HPP__

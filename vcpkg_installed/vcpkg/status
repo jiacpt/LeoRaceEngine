@@ -94,3 +94,13 @@ Description: GoogleTest and GoogleMock testing frameworks
 Type: Port
 Status: install ok installed
 
+Package: spdlog
+Version: 1.11.0
+Depends: fmt, vcpkg-cmake, vcpkg-cmake-config
+Architecture: x64-windows
+Multi-Arch: same
+Abi: c01df305655b6a5637cc467a20a03a2def54bced8eca40a354652ce4508aae2c
+Description: Very fast, header only, C++ logging library
+Type: Port
+Status: install ok installed
+
