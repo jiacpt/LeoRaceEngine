@@ -1,11 +1,16 @@
 #pragma once
 
-// For use by HEngine applications
+// For use by RaceEngine applications
+
+#include <glad/glad.h>
+#include <GLFW/glfw3.h>
 
 #include "Runtime/Core/Application.hpp"
 #include "Runtime/Core/Log.hpp"
 #include "Runtime/Core/Base.hpp"
 #include "Runtime/Core/Core.hpp"
+
+
 /* #include "Runtime/Core/AppFramework/Application.h"
 #include "Runtime/Core/AppFramework/Layer/Layer.h"
 #include "Runtime/Core/Log/Log.h"

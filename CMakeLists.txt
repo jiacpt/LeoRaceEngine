@@ -11,11 +11,18 @@ set(LIBRARY_OUTPUT_PATH "${CMAKE_BINARY_DIR}/bin")
 message(${CMAKE_BINARY_DIR})
 set(ProjectRootDir "${CMAKE_CURRENT_SOURCE_DIR}")
 
-
 add_subdirectory(Engine)
-add_subdirectory(tests)
-add_subdirectory(examples)
+add_subdirectory(Tests)
+add_subdirectory(Examples)
 
+find_package(Threads)
+
+find_program(CCACHE_FOUND ccache)
+if(CCACHE_FOUND)
+    set_property(GLOBAL PROPERTY RULE_LAUNCH_COMPILE ccache)
+    set_property(GLOBAL PROPERTY RULE_LAUNCH_LINK ccache)
+    message("compiler ccache")
+endif(CCACHE_FOUND)
 
 set(CPACK_PROJECT_NAME ${PROJECT_NAME})
 set(CPACK_PROJECT_VERSION ${PROJECT_VERSION})

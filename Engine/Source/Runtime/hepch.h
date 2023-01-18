@@ -23,6 +23,7 @@
 #include "Runtime/Core/Log/Log.h"
 #include "Runtime/Debug/Instrumentor.h"
 */
+
 #ifdef HE_PLATFORM_WINDOWS
 #include <Windows.h>
 #endif
