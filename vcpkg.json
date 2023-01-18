@@ -1,5 +1,5 @@
 {
-    "name": "leo-test",
+    "name": "race-engine",
     "version": "0.1.0",
     "builtin-baseline": "e2667a41fc2fc578474e9521d7eb90b769569c83",
     "dependencies": [

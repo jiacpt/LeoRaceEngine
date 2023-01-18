@@ -1,0 +1,96 @@
+Package: vcpkg-cmake-config
+Version: 2022-02-06
+Port-Version: 1
+Architecture: x64-windows
+Multi-Arch: same
+Abi: 9a4b83fb8dd963b486a05b4c6310d4d1b2c85bf12f0000c0065c1e115b0b6693
+Type: Port
+Status: install ok installed
+
+Package: vcpkg-cmake
+Version: 2022-08-18
+Architecture: x64-windows
+Multi-Arch: same
+Abi: 21f0172049c9a56f00f9cdbb505340cb223249c1861cefde27b19291ad60c5e3
+Type: Port
+Status: install ok installed
+
+Package: fmt
+Version: 9.0.0
+Depends: vcpkg-cmake, vcpkg-cmake-config
+Architecture: x64-windows
+Multi-Arch: same
+Abi: a41b0729f42ae3895f3bfdf23777b0739accce9b40da2223623730f661f13cc2
+Description: Formatting library for C++. It can be used as a safe alternative to printf or as a fast alternative to IOStreams.
+Type: Port
+Status: install ok installed
+
+Package: egl-registry
+Version: 2021-11-23
+Architecture: x64-windows
+Multi-Arch: same
+Abi: 9bc82a8ec3acfc6a4941e4867e79e40d4cba9b2af05fb32d2287959f7b3dfed2
+Description: the EGL API and Extension Registry
+Type: Port
+Status: install ok installed
+
+Package: opengl-registry
+Version: 2021-11-17
+Depends: egl-registry
+Architecture: x64-windows
+Multi-Arch: same
+Abi: feb31733dd2b4841580e695ce20143012522af7b8cfda9057714096f776f6265
+Description: the API and Extension registries for the OpenGL family APIs
+Type: Port
+Status: install ok installed
+
+Package: glad
+Version: 0.1.36
+Depends: egl-registry, opengl-registry, vcpkg-cmake, vcpkg-cmake-config
+Architecture: x64-windows
+Multi-Arch: same
+Abi: 51569bc529250055bea64454d0164bb4ef66c100ea9e6c4434e39a47e78b07ad
+Description: Multi-Language Vulkan/GL/GLES/EGL/GLX/WGL Loader-Generator based on the official specs.
+Type: Port
+Default-Features: loader
+Status: install ok installed
+
+Package: glad
+Feature: loader
+Architecture: x64-windows
+Multi-Arch: same
+Description: Generate loader logic.
+Type: Port
+Status: install ok installed
+
+Package: glfw3
+Version: 3.3.8
+Port-Version: 2
+Depends: vcpkg-cmake, vcpkg-cmake-config
+Architecture: x64-windows
+Multi-Arch: same
+Abi: 830c8f15a0a1fa11dace7249795c9b4b46cdb27b0010bafe9af802b7884b0be0
+Description: GLFW is a free, Open Source, multi-platform library for OpenGL, OpenGL ES and Vulkan application development. It provides a simple, platform-independent API for creating windows, contexts and surfaces, reading input, handling events, etc.
+Type: Port
+Status: install ok installed
+
+Package: glm
+Version: 0.9.9.8
+Port-Version: 1
+Architecture: x64-windows
+Multi-Arch: same
+Abi: 96b8f154489f25cc0fbee32e7f88848c7076b33f8d25c1b3c565de07291a0562
+Description: OpenGL Mathematics (GLM)
+Type: Port
+Status: install ok installed
+
+Package: gtest
+Version: 1.12.1
+Depends: vcpkg-cmake, vcpkg-cmake-config
+Architecture: x64-windows
+Multi-Arch: same
+Abi: 99cc9eec6a01e09d8b6aa7d0c0e93d07620d775da21a8865554e6ba4233bfb50
+Description: GoogleTest and GoogleMock testing frameworks
+Type: Port
+Status: install ok installed
+

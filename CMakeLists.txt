@@ -5,7 +5,6 @@ project(RaceEngine VERSION 0.1.0)
 enable_testing()
 
 
-
 if(CMAKE_BUILD_TYPE AND (CMAKE_BUILD_TYPE STREQUAL "Debug"))
     set(EXECUTABLE_OUTPUT_PATH "${PROJECT_SOURCE_DIR}/bin/Debug")
     set(LIBRARY_OUTPUT_PATH "${PROJECT_SOURCE_DIR}/lib/Debug")

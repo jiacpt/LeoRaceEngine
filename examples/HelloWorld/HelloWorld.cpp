@@ -1,4 +1,4 @@
-#include <iostream>
+/* #include <iostream>
 #include "../../src/Race/include/Application.hpp"
 #include "../../src/Race/include/Core.hpp"
 
@@ -8,5 +8,12 @@ int main(int argc, char const *argv[])
 
     std::cout << "Hello World!" << std::endl;
 
+    return 0;
+}
+ */
+
+int main(int argc, char const *argv[])
+{
+    /* code */
     return 0;
 }

@@ -1,16 +1,24 @@
 {
     "configurations": [
         {
-            "name": "Linux",
+            "name": "Win32",
             "includePath": [
-                "${workspaceFolder}/src/**",
-                "${workspaceFolder}/vcpkg_installed/x64-windows/**"
+                "${workspaceFolder}/**",
+                "${vcpkgRoot}/ffmpeg/include",
+                "${vcpkgRoot}/x64-windows/include",
+                "${vcpkgRoot}/x64-windows-static/include",
+                "${workspaceFolder}/src/Race"
             ],
-            "defines": [],
-            "compilerPath": "C:/MinGW/bin/gcc.exe",
+            "defines": [
+                "_DEBUG",
+                "UNICODE",
+                "_UNICODE"
+            ],
+            "windowsSdkVersion": "10.0.22000.0",
+            "compilerPath": "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.34.31933/bin/Hostx64/x64/cl.exe",
             "cStandard": "c17",
             "cppStandard": "c++17",
-            "intelliSenseMode": "linux-gcc-x64",
+            "intelliSenseMode": "windows-msvc-x64",
             "configurationProvider": "ms-vscode.cmake-tools"
         }
     ],
